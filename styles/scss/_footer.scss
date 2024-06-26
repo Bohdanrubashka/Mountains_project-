@@ -1,0 +1,47 @@
+.footer {
+  padding: 12.5em 0;
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__second-col {
+    display: flex;
+    gap: 13.25em;
+    text-transform: capitalize;
+  }
+  &__logo {
+    margin-bottom: calc(1.5em / 2);
+  }
+  &__text {
+    margin-bottom: 7.625em;
+    line-height: 178%;
+    max-width: 303px;
+  }
+  &__desc {
+    font-weight: 500;
+    line-height: 178%;
+    opacity: 0.5;
+  }
+
+  &__subtitle {
+    font-size: clamp(10px, 5vw, 24px);
+    line-height: 133%;
+    color: $accent;
+    margin-bottom: 1.5em;
+  }
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+  }
+  &__item {
+    font-weight: 500;
+    line-height: 178%;
+  }
+}
+.logo {
+  font-family: $second-family;
+  font-size: clamp(16px, 2svw, 32px);
+  letter-spacing: 0.01em;
+  text-transform: uppercase;
+}
