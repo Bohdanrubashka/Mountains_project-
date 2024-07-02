@@ -455,23 +455,6 @@ body {
   line-height: 100%;
   opacity: 0.1;
 }
-.about__text {
-  position: relative;
-  font-weight: 800;
-  letter-spacing: 0.33em;
-  text-transform: uppercase;
-  color: #fbd784;
-  margin: 0 0 1.625em 96px;
-}
-.about__text::before {
-  content: "";
-  position: absolute;
-  top: 50%;
-  left: -96px;
-  height: 2px;
-  width: 72px;
-  background: #fbd784;
-}
 .about__title {
   font-family: "Chronicle Display", Arial, Helvetica, sans-serif;
   font-weight: 600;
@@ -494,15 +477,10 @@ body {
   color: #fbd784;
 }
 .about__svg-wrapper {
-  position: relative;
   width: 24px;
   height: 16px;
-  fill: none;
 }
 .about__svg-wrapper svg {
-  position: absolute;
-  top: 0;
-  left: 0;
   fill: #fbd784;
 }
 .about__img-wrap {
@@ -596,13 +574,6 @@ body {
   line-height: 178%;
 }
 
-.logo {
-  font-family: "Chronicle Display", Arial, Helvetica, sans-serif;
-  font-size: clamp(16px, 2svw, 32px);
-  letter-spacing: 0.01em;
-  text-transform: uppercase;
-}
-
 @media (max-width: 950px) {
   .footer__wrapper {
     flex-direction: column;
@@ -617,5 +588,161 @@ body {
   .footer__second-col {
     gap: 1.5em;
     flex-direction: column;
+  }
+}
+.logo {
+  font-family: "Chronicle Display", Arial, Helvetica, sans-serif;
+  font-size: clamp(16px, 2svw, 32px);
+  letter-spacing: 0.01em;
+  text-transform: uppercase;
+}
+
+.text {
+  position: relative;
+  font-weight: 800;
+  letter-spacing: 0.33em;
+  text-transform: uppercase;
+  color: #fbd784;
+  margin: 0 0 1.625em 96px;
+}
+.text::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: -96px;
+  height: 2px;
+  width: 72px;
+  background: #fbd784;
+}
+
+.svg-wrapper {
+  position: relative;
+  fill: none;
+}
+.svg-wrapper svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.header {
+  background-image: url(../../img/header-img/header-bg.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 200dvh;
+  margin-bottom: -650px;
+}
+.header .container {
+  margin: 0 auto;
+  padding: 0 15px;
+  max-width: 1790px;
+}
+.header__wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3.625em 0 12.375em;
+  position: relative;
+}
+.header__list {
+  display: flex;
+  align-items: center;
+  gap: 0 40px;
+}
+.header__user-wrap {
+  display: flex;
+  gap: 0 15px;
+  align-items: center;
+}
+.header__svg-wrapper {
+  width: 16px;
+  height: 24px;
+}
+.header__user-svg-wrapper {
+  width: 20px;
+  height: 20px;
+}
+.header__title {
+  font-family: "Chronicle Display", Arial, Helvetica, sans-serif;
+  font-weight: 600;
+  font-size: clamp(24px, 5vw, 88px);
+  line-height: 114%;
+  text-transform: capitalize;
+  margin-bottom: 0.4em;
+  max-width: 950px;
+}
+.header__arrow-wrap {
+  display: flex;
+  align-items: center;
+  gap: 0 16px;
+}
+.header__wrapper {
+  display: flex;
+  justify-content: center;
+}
+.header__btn-menu {
+  display: none;
+}
+
+@media (max-width: 866px) {
+  .header {
+    margin-bottom: -144px;
+  }
+  .header__btn-menu {
+    display: block;
+    width: 30px;
+    height: 20px;
+    position: relative;
+    flex-shrink: 0;
+  }
+  .header__line {
+    position: absolute;
+    left: 2px;
+    width: 100%;
+    height: 3px;
+    background-color: #fff;
+    border-radius: 2px;
+    transition: 0.3s;
+  }
+  .header__line:nth-of-type(1) {
+    top: 0;
+  }
+  .header__line:nth-of-type(2) {
+    top: 9px;
+  }
+  .header__line:nth-of-type(3) {
+    top: 18px;
+  }
+  .header__btn-menu_open .header__line:nth-of-type(1) {
+    transform: rotate(45deg);
+    top: 9px;
+  }
+  .header__btn-menu_open .header__line:nth-of-type(2) {
+    display: none;
+  }
+  .header__btn-menu_open .header__line:nth-of-type(3) {
+    transform: rotate(-45deg);
+    top: 9px;
+  }
+  .header__nav {
+    display: none;
+  }
+  .header__nav_open {
+    display: block;
+    position: absolute;
+    right: -7px;
+    top: 104px;
+    background: #fff;
+    border-radius: 5px;
+  }
+  .header__item {
+    color: black;
+  }
+  .header__list {
+    flex-direction: column;
+    gap: 3px 0;
   }
 }/*# sourceMappingURL=qwe.css.map */

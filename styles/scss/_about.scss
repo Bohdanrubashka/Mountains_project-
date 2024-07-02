@@ -24,23 +24,7 @@
     line-height: 100%;
     opacity: 0.1;
   }
-  &__text {
-    position: relative;
-    font-weight: 800;
-    letter-spacing: 0.33em;
-    text-transform: uppercase;
-    color: $accent;
-    margin: 0 0 1.625em 96px;
-  }
-  &__text::before {
-    content: "";
-    position: absolute;
-    top: 50%;
-    left: -96px;
-    height: 2px;
-    width: 72px;
-    background: $accent;
-  }
+
   &__title {
     font-family: $second-family;
     font-weight: 600;
@@ -63,14 +47,9 @@
     color: $accent;
   }
   &__svg-wrapper {
-    position: relative;
     width: 24px;
     height: 16px;
-    fill: none;
     & svg {
-      position: absolute;
-      top: 0;
-      left: 0;
       fill: #fbd784;
     }
   }
