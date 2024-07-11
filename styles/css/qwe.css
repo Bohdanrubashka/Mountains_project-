@@ -6,7 +6,7 @@
 }
 @font-face {
   font-family: "Chronicle Display";
-  src: url("../..fonts/ChronicleDisplay-Bold.woff2");
+  src: url("../../fonts/ChronicleDisplay-Bold.woff2");
   font-style: normal;
   font-weight: 700;
 }
@@ -593,6 +593,7 @@ body {
 .logo {
   font-family: "Chronicle Display", Arial, Helvetica, sans-serif;
   font-size: clamp(16px, 2svw, 32px);
+  font-weight: 600;
   letter-spacing: 0.01em;
   text-transform: uppercase;
 }
@@ -633,7 +634,7 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   min-height: 200dvh;
-  margin-bottom: -650px;
+  margin-bottom: -37%;
 }
 .header .container {
   margin: 0 auto;
@@ -688,9 +689,6 @@ body {
 }
 
 @media (max-width: 866px) {
-  .header {
-    margin-bottom: -144px;
-  }
   .header__btn-menu {
     display: block;
     width: 30px;
